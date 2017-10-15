@@ -1,0 +1,27 @@
+<h1> New Registered Application </h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <p> When making your application...</p>
+        <ul>
+            <li>Keep the application name short. </li>
+            <li>The URL can be any length. </li>
+            <li>Make sure URL info is accurate! </li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <%= form_for @application do |a| %>
+            <div class="form-group">
+                <%= a.label :name %>
+                <%= a.text_field :name, class: 'form-control', placeholder: 'Enter an application name...' %>
+            </div>
+            <div class="form-group">
+                <%= a.label :url %>
+                <%= a.text_field :url, class: 'form-control', placeholder: 'Enter the application url...' %>
+            </div>
+            <div class="form-group">
+                <%= a.submit "Save", class: 'btn btn-success' %>
+            </div>
+        <% end %>
+    </div>
+</div>

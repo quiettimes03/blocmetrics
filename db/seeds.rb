@@ -5,3 +5,15 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+#Create Applications
+50.times do
+  Application.create!(
+    name: "New Name",
+    url: "New URL"
+  )
+end
+applications = Application.all
+
+puts "#{Application.count} applications created."

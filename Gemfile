@@ -45,9 +45,6 @@ source 'https://rubygems.org'
 
  gem 'bcrypt'
 
- gem 'mailcatcher'
-
-
 group :development, :test do
    gem 'rspec-rails', '~> 3.0'
    gem 'rails-controller-testing'
